@@ -4,6 +4,13 @@ pragma solidity ^0.8.19;
 import {ERC20Burnable, ERC20} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
+
+/// errors
+error StableCoin__MustBeMoreThanZero();
+error StableCoin__BurnAmountExceedsBAlance();
+error StableCoin__NotZeroAddress();
+
+
 /// @title Stable Coin
 /// @author Favour Aniogor
 /// @notice A stable coin like USDC or USDT
