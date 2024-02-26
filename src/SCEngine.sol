@@ -7,6 +7,10 @@ pragma solidity ^0.8.19;
 /// @dev This system is designed to help Stable Coin maintain a 1 token = $1 peg.
 contract SCEngine {
 
+    
+    /// @param _tokenCollateralAddress The address of the token to deposit as collateral
+    /// @param _amountOfCollateral The amount of collateral to deposit
+    function depositCollateral(address _tokenCollateralAddress, uint256 _amountOfCollateral) external {}
 }
 
 interface ISCEngine {
